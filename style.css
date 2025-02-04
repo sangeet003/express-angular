@@ -1,4 +1,9 @@
 body {
-    background: #CCC;
+    background: red;
     font-size: 12px;
+}
+
+p {
+    color: blue;
+    padding: 10px;
 }
