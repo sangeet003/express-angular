@@ -11,3 +11,11 @@ p {
     color: blue;
     padding: 10px;
 }
+
+ul {
+    padding-left: 10px;
+}
+
+ul li {
+    border-bottom: 1px solid #CCC;
+}
