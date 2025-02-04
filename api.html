@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff7bfc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Posts</h1>
+    <button onclick="fetchData()">Load Posts</button>
+    <div id="results"></div>
+
+    <script>
+        function fetchData() {
+            // Fetch data from JSONPlaceholder API
+            fetch('https://jsonplaceholder.typicode.com/posts/1')
+                .then(response => response.json())
+                .then(data => {
+                    displayData(data);
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('results').innerHTML = 
+                        '<p>Error loading data</p>';
+                });
+        }
+
+        function displayData(post) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous content
+            
+            const postElement = document.createElement('div');
+            postElement.className = 'post';
+            postElement.innerHTML = `
+                <h3>${post.title}</h3>
+                <p>${post.body}</p>
+                <small>Post ID: ${post.id}</small>
+            `;
+            
+            resultsDiv.appendChild(postElement);
+        }
+    </script>
+</body>
+</html> 
