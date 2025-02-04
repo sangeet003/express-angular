@@ -2,3 +2,7 @@ body {
     background: #CCC;
     font-size: 12px;
 }
+
+button {
+    width: 150px;
+}
