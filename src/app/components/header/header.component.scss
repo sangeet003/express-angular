@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    padding: 10px;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.nav {
+    margin-left: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    
+    a {
+        color: #999;
+    }
+}

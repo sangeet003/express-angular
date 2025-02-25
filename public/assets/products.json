@@ -1,0 +1,106 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Noise-Canceling Headphones",
+      "description": "Premium over-ear headphones featuring advanced noise-canceling technology, 30-hour battery life, and crystal-clear sound quality. Perfect for travel, work, or immersive music experience.",
+      "price": 249.99,
+      "photos": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90",
+        "https://images.unsplash.com/photo-1487215078519-e21cc028cb29"
+      ],
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "AudioPhile",
+          "rating": 5,
+          "comment": "Excellent sound quality and comfort!"
+        },
+        {
+          "user": "MusicLover22",
+          "rating": 4,
+          "comment": "Great battery life, but a bit pricey"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smart Fitness Watch",
+      "description": "Track your health and fitness goals with this advanced smartwatch. Features include heart rate monitoring, GPS tracking, sleep analysis, and 14+ sport modes. Water-resistant up to 50m.",
+      "price": 199.99,
+      "photos": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1"
+      ],
+      "rating": 4.5,
+      "reviews": [
+        {
+          "user": "FitnessGuru",
+          "rating": 5,
+          "comment": "Perfect for tracking workouts!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Organic Cotton T-Shirt",
+      "description": "Made from 100% organic cotton, this comfortable t-shirt features a classic fit and sustainable manufacturing process. Available in multiple colors and sizes from XS to XXL.",
+      "price": 24.99,
+      "photos": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+        "https://images.unsplash.com/photo-1503341504253-dff4815485f1",
+        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a"
+      ],
+      "rating": 4.3,
+      "reviews": [
+        {
+          "user": "StyleIcon",
+          "rating": 4,
+          "comment": "Great quality, runs slightly large"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Professional Chef Knife",
+      "description": "8-inch high-carbon stainless steel chef knife with ergonomic handle. Perfect balance and precision cutting make this an essential tool for any kitchen enthusiast.",
+      "price": 89.99,
+      "photos": [
+        "https://images.unsplash.com/photo-1566864222010-d45675442c31",
+        "https://images.unsplash.com/photo-1593618998160-c4d5a436638c"
+      ],
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "ChefMaster",
+          "rating": 5,
+          "comment": "Restaurant quality knife at a great price"
+        },
+        {
+          "user": "HomeCook",
+          "rating": 5,
+          "comment": "Incredibly sharp and well-balanced"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Yoga Mat Premium",
+      "description": "Extra thick 6mm eco-friendly yoga mat with alignment lines. Non-slip surface, perfect for yoga, pilates, and floor exercises. Includes carrying strap.",
+      "price": 45.99,
+      "photos": [
+        "https://images.unsplash.com/photo-1592432678016-e910b452f9a2",
+        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f"
+      ],
+      "rating": 4.6,
+      "reviews": [
+        {
+          "user": "YogaEnthusiast",
+          "rating": 5,
+          "comment": "Best mat I've ever used!"
+        }
+      ]
+    }
+  ]
+}
