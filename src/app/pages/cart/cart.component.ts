@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { Product } from '../../models/product';
 
 @Component({
   selector: 'app-cart',
@@ -9,7 +10,7 @@ import { ApiService } from '../../services/api.service';
 })
 export class CartComponent implements OnInit {
 
-  cartItems: any[] = [];
+  cartItems: Product[] = [];
 
   constructor(private apiService: ApiService) {
   }
@@ -19,7 +20,7 @@ export class CartComponent implements OnInit {
   }
 
 
-  getImageStyle(p: any) {
+  getImageStyle(p: Product) {
     return {
       backgroundImage: `url('${p.photos[0]}')`,
     }

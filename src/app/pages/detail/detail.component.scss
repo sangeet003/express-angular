@@ -1,0 +1,10 @@
+$height: 500px;
+
+.carousel {
+    height: $height;
+
+    .carousel-item img {
+        max-height: $height;
+        width: 100%;
+    }
+}

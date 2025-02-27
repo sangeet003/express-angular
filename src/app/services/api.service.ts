@@ -1,24 +1,26 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Product, ProductsResponse } from '../models/product';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
 
-  private _cart: any[] = [];
+  private _cart: Product[] = [];
   
-  get cart() {
+  get cart(): Product[] {
     return this._cart;
   }
 
   constructor(private http: HttpClient) { }
 
-  getProducts() {
-    return this.http.get('/assets/products.json');
+  getProducts(): Observable<ProductsResponse> {
+    return this.http.get<ProductsResponse>('/assets/products.json');
   }
 
-  addToCart(product: any) {
+  addToCart(product: Product) {
     this._cart.push(product);
   }
 

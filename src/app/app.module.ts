@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListingComponent } from './pages/listing/listing.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { CommonModule } from '@angular/common';
+import { DetailComponent } from './pages/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CommonModule } from '@angular/common';
     HeaderComponent,
     ListingComponent,
     CartComponent,
+    DetailComponent
   ],
   imports: [
     CommonModule,
@@ -24,8 +26,7 @@ import { CommonModule } from '@angular/common';
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

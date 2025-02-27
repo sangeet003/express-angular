@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { Router } from '@angular/router';
+import { Product, ProductsResponse } from '../../models/product';
 
 @Component({
   selector: 'app-listing',
@@ -8,14 +10,17 @@ import { ApiService } from '../../services/api.service';
   standalone: false
 })
 export class ListingComponent implements OnInit {
-  products: any[] = [];
+  products: Product[] = [];
 
-  constructor(private apiService: ApiService) {
+  constructor(
+    private apiService: ApiService,
+    private router: Router,
+  ) {
   }
 
   ngOnInit(): void {
       this.apiService.getProducts().subscribe({
-        next: (data: any) => {
+        next: (data: ProductsResponse) => {
           this.products = data.products;
         },
         error: (err) => {
@@ -24,13 +29,17 @@ export class ListingComponent implements OnInit {
       })
   }
 
-  getImageStyle(p: any) {
+  showProduct(id: number) {
+    this.router.navigate([`/${id}`]);
+  }
+
+  getImageStyle(p: Product) {
     return {
       backgroundImage: `url('${p.photos[0]}')`,
     }
   }
 
-  addToCart(p: any) {
+  addToCart(p: Product) {
     this.apiService.addToCart(p);
   }
 
@@ -38,11 +47,11 @@ export class ListingComponent implements OnInit {
     this.apiService.removeFromCart(idx);
   }
 
-  incrementQty(p: any) {
+  incrementQty(p: Product) {
 
   }
 
-  decrementQty(p: any) {
+  decrementQty(p: Product) {
     
   }
 }

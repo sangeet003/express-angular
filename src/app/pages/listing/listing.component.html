@@ -4,7 +4,7 @@
       <div class="card" style="width: 18rem">
         <div class="image" [ngStyle]="getImageStyle(p)"></div>
         <div class="card-body">
-          <h5 class="card-title">{{ p.name }}</h5>
+          <h5 class="card-title" (click)="showProduct(p.id)">{{ p.name }}</h5>
           <h6 class="card-title">{{ p.price | currency : "INR" }}</h6>
           <p class="card-text">
             {{ p.description }}
